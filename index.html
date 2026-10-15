@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>M J Cl</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         PART 1: WELCOME
+    ========================== -->
+
+    <section class="welcome-container" id="welcomeSection">
+
+        <div class="profile-circle">
+            <img src="Claude.jpg.png" alt="My Photo">
+        </div>
+
+        <h1>Welcome to Visit Website</h1>
+
+        <p>Welcome! We are happy to see you here.</p>
+
+        <button id="loginBtn">
+            Login
+        </button>
+
+    </section>
+
+
+    <!-- =========================
+         PART 2: LOGIN
+    ========================== -->
+
+    <section class="login-section" id="loginSection">
+
+        <div class="container">
+
+            <h1>Hello! You can to do Login</h1>
+
+            <p>After to do login, you received gift. <br> "Your gift costs 500frw"</p>
+            <form id="loginForm">
+
+                <label for="username">Full Name</label>
+                <input type="text" id="username" placeholder="Enter your full name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+
+                <label for="phonenumber">Phone number</label>
+                <input type="tel" id="phonenumber" placeholder="07********" required>
+
+
+                <button id="submitLogin">
+                    Login
+                </button>
+
+                <p id="loginMessage">Login Succefull</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PART 3: MULTIPLE CHOICE
+    ========================== -->
+
+    <section class="quiz-section" id="quizSection">
+
+        <div class="quiz-box">
+
+            <h1>login is done.</h1>
+
+            <h2>Choose where received your gift.</h2>
+
+            <label>
+                <input type="radio" name="gift" value="Momopay">
+                Momopay
+            </label>
+
+            <label>
+                <input type="radio" name="gift" value="ArtelMoney">
+                ArtelMoney
+            </label>
+
+            <label>
+                <input type="radio" name="gift" value="Airtime">
+                Airtime
+            </label>
+
+            <label>
+                <input type="radio" name="gift" value="MTNmomo">
+                MTN momo
+            </label>
+
+            <button id="chooseBtn">
+                Submit
+            </button>
+
+            <p id="result"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
