@@ -1,0 +1,426 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   PART 1: WELCOME
+========================= */
+
+.welcome-container {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(135deg,
+            #9e527e,
+            #088395,
+            #d2d574);
+
+    color: white;
+}
+
+
+/* Profile Photo */
+
+.profile-circle {
+    width: 180px;
+    height: 180px;
+
+    margin-bottom: 25px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 5px solid white;
+
+    box-shadow:
+        0 0 25px rgba(14, 1, 250, 0.5);
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Welcome Title */
+
+.welcome-container h1 {
+    font-size: 32px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Welcome Text */
+
+.welcome-container p {
+    font-size: 16px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Welcome Login Button */
+
+#loginBtn {
+    padding: 13px 45px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: white;
+
+    color: #063ffa;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#loginBtn:hover {
+    transform: scale(1.08);
+
+    background: #048dfd;
+
+    color: rgb(8, 244, 44);
+}
+
+
+/* =========================
+   PART 2: LOGIN
+========================= */
+
+.login-section {
+    display: none;
+
+    min-height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(135deg,
+            #fefefe,
+            #fefefe,
+            #f8f9f9);
+}
+
+
+.login-box {
+    width: 90%;
+
+    max-width: 380px;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 50px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(12, 12, 12, 0.3);
+}
+
+
+.login-box h1 {
+    color: #071952;
+
+    margin-bottom: 10px;
+}
+
+
+.login-box p {
+    color: #555;
+
+    margin-bottom: 20px;
+}
+
+
+.login-box input {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+.login-box input:focus {
+    border-color: #088395;
+}
+
+
+.login-box button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #071952;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+}
+
+
+.login-box button:hover {
+    background: #088395;
+}
+
+
+#loginMessage {
+    margin-top: 15px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   PART 3: QUIZ
+========================= */
+
+.quiz-section {
+    display: none;
+
+    min-height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(135deg,
+            #fcfcfd,
+            #f4f5f5,
+            #f8f9f9);
+}
+
+
+.quiz-box {
+    width: 90%;
+
+    max-width: 450px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 50px;
+
+    box-shadow:
+        0 10px 30px rgba(4, 0, 0, 0.3);
+}
+
+
+.quiz-box h1 {
+    text-align: center;
+
+    color: #088395;
+
+    margin-bottom: 10px;
+}
+
+
+.quiz-box h2 {
+    color: #071952;
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Answer Options */
+
+.quiz-box label {
+    display: block;
+
+    padding: 14px;
+
+    margin: 10px 0;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.quiz-box label:hover {
+    background: #f0f8ff;
+
+    border-color: #088395;
+}
+
+
+.quiz-box input {
+    margin-right: 10px;
+}
+
+
+/* Submit Button */
+
+#chooseBtn {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #071952;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+#chooseBtn:hover {
+    background: #088395;
+}
+
+
+/* Quiz Result */
+
+#result {
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    font-size: 17px;
+}
+
+/*-========== lebel =-=====*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f8ff;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+
+    border-radius: 12px;
+    width: 320px;
+
+    box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #d2d574;
+}
+
+label {
+    display: block;
+
+    margin-top: 12px;
+}
+
+input {
+    width: 100%;
+
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #088395;
+
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+
+    background: #434ee6;
+    color: white;
+    border: none;
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #071952;
+
+}
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+}
